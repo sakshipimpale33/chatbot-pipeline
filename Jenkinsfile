@@ -10,8 +10,10 @@ pipeline {
 
         stage('Run Chatbot') {
             steps {
-                bat 'python chat.py'
-            }
+        timeout(time: 2, unit: 'MINUTES') {
+            bat 'python chat.py'
+        }
+    }
         }
     }
 }
