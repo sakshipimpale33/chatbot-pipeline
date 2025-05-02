@@ -10,7 +10,7 @@ pipeline {
 
         stage('Run Chatbot') {
             steps {
-                sh 'python chatbot.py'
+                sh 'python chat.py'
             }
         }
     }
